@@ -1,0 +1,3 @@
+import master
+
+master.test()

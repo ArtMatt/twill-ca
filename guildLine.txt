@@ -1,0 +1,1 @@
+																	<a href="festival_guild_battle.php?id=10441_1402761560" onclick="ajaxLinkSend('globalContainer', 'festival_guild_battle.php?id=10441_1402761560'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/festival_arena_enter.jpg" /></a>															</div>

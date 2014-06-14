@@ -10,7 +10,7 @@ monsterList = ['Aphillistienio@gmail.com', 'Bphillistienio@gmail.com', 'phillist
 
 conqDuelList = ['matthewgcasey@gmail.com', 'Aphillistienio@gmail.com', 'Bphillistienio@gmail.com', 'phillistienio3@gmail.com', 'phillistienio4@gmail.com', '5phillistienio@gmail.com', '6phillistienio@gmail.com', '7phillistienio@gmail.com', 'guruphillistienio@gmail.com', 'mattsliferocks@gmail.com', 'phillistienioa@gmail.com', 'phillistienio2@gmail.com', 'wandphillistienio@gmail.com', 'exphillistienio@gmail.com', 'vizphillistienio@gmail.com', 'bombphillistienio@gmail.com', '1jew@grr.la']
 
-pw = "Stew"
+pw = "WITHHELD FROM BEGIN!!"
 cA = 'http://web3.castleagegame.com/castle_ws/'
 guildId = '&guild_id=100003851490194_1340565613'
 

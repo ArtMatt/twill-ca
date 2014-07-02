@@ -1,23 +1,24 @@
 import master
 import datetime
 
-Y = open("/home/ubuntu/twill-0.9/schedule.txt", "r+")
+Y = open("/home/ubuntu/twill-0.9/schedule.txt", "r")
 y = Y.readline()
 y = y.rstrip('\n')
 o = Y.readline()
 o = o.rstrip('\n')
 now = datetime.datetime.now()
 
-print y
-print o
-print now.day
-print now.hour
+print "old day data: ", y
+print "old hour data: ", o
+print "day now:", now.day
+print "hour now: ", now.hour
 
-if int(now.day) < y:
-  if int(now.hour) < o:
+Y.close
+
+if int(now.day) > int(y):
+  if int(now.hour) > int(o) or int(now.day) - int(y) == 2:
     master.cycleDaily()
-    Y.truncate
-    Y.seek(0)
+    Y = open("/home/ubuntu/twill-0.9/schedule.txt", "w")
     if int(now.day) >= 30:
       Y.write("1")
     else:

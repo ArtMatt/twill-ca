@@ -1,0 +1,12 @@
+==> at https://web3.castleagegame.com/castle_ws/connect_login.php
+==> at https://web3.castleagegame.com/castle_ws/connect_login.php
+matthewgcasey@gmail.com
+Note: submit is using submit button: name="None", value=""
+
+==> at https://web3.castleagegame.com/castle_ws/festival_guild_battle.php?id=10744_1403474393
+==> at https://web3.castleagegame.com/castle_ws/connect_login.php
+==> at https://web3.castleagegame.com/castle_ws/connect_login.php
+matthewgcasey@gmail.com
+Note: submit is using submit button: name="None", value=""
+
+==> at https://web3.castleagegame.com/castle_ws/festival_guild_battle.php?id=10744_1403474393

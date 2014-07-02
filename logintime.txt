@@ -2297,7 +2297,7 @@
 				var power_info= cur_power_id.split('_');
 				var image_url= 'https://castleagegame1-a.akamaihd.net/graphics/'+ $('#slot_image_'+cur_power_id).val();
 				var image_html= '<div onclick="unpickPower('+power_info[0]+', '+power_info[1]+', '+power_info[2]+'); hideItemPopup(\'item_desc_'+cur_power_id+'\',event);return false;">'+
-								"<img "+
+								"<img style='width:65px;height:65px;' "+
 									'onMouseOut="hideItemPopup(\'item_desc_'+cur_power_id+'\',event);return false;"'+
 									'onMouseOver="showItemPopup(\'item_desc_'+cur_power_id+'\', this, 50, 40);return false;"'+
 								  "src='"+image_url+"'/></div>";
@@ -3559,6 +3559,20 @@ background-color:#000000;
 	padding:3px 0 0 5px;
 	margin-left:27px;
 	float:left;
+}
+
+/*
+.stroke {
+-webkit-text-stroke: 1px black;
+color: white;
+}
+*/
+
+.guildSelect {
+	background-color:#252525;
+	color:#b3b3b3;
+	border: 1px solid #252525;
+	width:140px;
 }
 
 .keep_main_section .keep_attribute_section .keep_attribute .attribute_stat_container{
@@ -7042,10 +7056,10 @@ div.title_left{
 				<a href="help.php" onclick="ajaxLinkSend('globalContainer', 'help.php'); return false;" ><span style='color:#b09060;'>Help/FAQ</span></a> |
 				<a target="_blank" href="http://www.castleageforums.com/cforum/" style="color:#b09060" > Forum </a> |
 				<a href="http://web.castleagegame.com/castle/priv_policy.html" style="color:#b09060" > Privacy Policy </a> |
-												<a href="army.php" onclick="ajaxLinkSend('globalContainer', 'army.php'); return false;" ><span style='color:#b09060;'>My Army (3)</span></a> |
-								<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><span style='color:#b09060;'>My Stats (+2)</span></a>&nbsp;&nbsp;
+												<a href="army.php" onclick="ajaxLinkSend('globalContainer', 'army.php'); return false;" ><span style='color:#b09060;'>My Army (63)</span></a> |
+								<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><span style='color:#b09060;'>My Stats (+1)</span></a>&nbsp;&nbsp;
 				|
-														Welcome Jew Hypnotist (<a onclick="javascript:document.location.href='connect_login.php?platform_action=CA_web3_logout';" href="#">Logout</a>)&nbsp;&nbsp;
+														Welcome Jew Defamer (<a onclick="javascript:document.location.href='connect_login.php?platform_action=CA_web3_logout';" href="#">Logout</a>)&nbsp;&nbsp;
 									        		</div>
         		<div style="clear:both;"></div>
       		</div>
@@ -7066,7 +7080,7 @@ div.title_left{
 			
 						    		 <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_energy.jpg');background-repeat:no-repeat;">
 										<div style='float:left; padding:21px 0 0 24px; width:190px;'>
-											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_sano.jpg" />
+											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_penelope.jpg" />
 										</div>
 										<div style='float:left;'>
 											<div style="padding:0px; color:#591700; padding-top:30px;">
@@ -7109,8 +7123,8 @@ div.title_left{
 		                            	<span id="energy_time_container" style="color: #197B30;">+<span id="energy_time_value" style="font-size:9px"></span></span>
 		                            </div>
 	                        								</div>
-							<div style='padding:2px 0 0 0;' title="28/91">
-								<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;"  style="text-decoration:none;color: #4b3715;font-size:11px;"><strong><span id="energy_current_value">28</span>/<span style=''>91</span></strong></a>							</div>
+							<div style='padding:2px 0 0 0;' title="34/38">
+								<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;"  style="text-decoration:none;color: #4b3715;font-size:11px;"><strong><span id="energy_current_value">34</span>/<span style=''>38</span></strong></a>							</div>
 						</div>
 						<div style="clear:both;"></div>
 
@@ -7126,7 +7140,7 @@ div.title_left{
 			
 						    		 <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_stamina.jpg');background-repeat:no-repeat;">
 										<div style='float:left; padding:21px 0 0 24px; width:190px;'>
-											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_sano.jpg" />
+											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_penelope.jpg" />
 										</div>
 										<div style='float:left;'>
 											<div style="padding:0px; color:#591700; padding-top:30px;">
@@ -7169,8 +7183,8 @@ div.title_left{
 	                            		<span id="stamina_time_container" style="color: #197B30;">+<span id="stamina_time_value" style="font-size:9px"></span></span>
 	                            	</div>
 	                        								</div>
-							<div style='padding:2px 0 0 0;' title="61/102">
-								<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none; color:#4b3715;font-size:11px;"><strong><span id="stamina_current_value">61</span>/<span style=''>102</span></strong></a>							</div>
+							<div style='padding:2px 0 0 0;' title="12/47">
+								<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none; color:#4b3715;font-size:11px;"><strong><span id="stamina_current_value">12</span>/<span style=''>47</span></strong></a>							</div>
 						</div>
 						<div style="clear:both;"></div>
 
@@ -7186,14 +7200,14 @@ div.title_left{
 			
 						    		 <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_health.jpg');background-repeat:no-repeat;">
 										<div style='float:left; padding:21px 0 0 24px; width:190px;'>
-											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_sano.jpg" />
+											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_penelope.jpg" />
 										</div>
 										<div style='float:left;'>
 											<div style="color:#591700;padding-top:30px;">
 												<div style='float:left;'>
 													<form onsubmit="ajaxFormSend('globalContainer', 'index.php?', this);return false;" method="post" id="headerHealForm" >
 				                						<input type="hidden" value="heal_avatar" name="action" />
-				                						<input type="hidden" name="bqh" value="33a654c3db1f424df2ed4129f2ee6d74" />
+				                						<input type="hidden" name="bqh" value="89a6b0835e6b00c5eceb717d78e23aed" />
 				            							<input type="image" class="imgButton" alt="Heal" src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_heal.gif" value="Heal Wounds" />
 				                						<input type="hidden" name="ajax"  value="1" />
 				                					</form>
@@ -7241,20 +7255,20 @@ div.title_left{
 			
 						    		 <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_gold.jpg');background-repeat:no-repeat;">
 										<div style='float:left; padding:21px 0 0 24px; width:190px;'>
-											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_sano.jpg" />
+											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_penelope.jpg" />
 										</div>
 										<div style='float:left;'>
 											<div style="color:#591700; padding-top:30px;">
 												<div style='float:left;'>
 													<form onsubmit="ajaxFormSend('globalContainer', 'index.php?', this);return false;" method="post">
 					        							<input type="image" class="imgButton" name="do" src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_bank.gif" value="Stash"/>
-					        							<input type="hidden" name="bqh" value="33a654c3db1f424df2ed4129f2ee6d74" />
+					        							<input type="hidden" name="bqh" value="89a6b0835e6b00c5eceb717d78e23aed" />
 					        							<input type="hidden" name="header_stash_gold" value="1" />
 					        							<input type="hidden" name="ajax"  value="1" /> 
 					    	            			</form>
 												</div>
 												<div style='float:left; font-weight:bold; font-size:11px; padding-left:50px;'>
-													Spend a 10% fee to bank 379,901 gold.<br/>
+													Spend a 10% fee to bank 3,000 gold.<br/>
 													Banked gold cannot be stolen by other players!
 												</div>
 												<div style='clear:both;'></div>
@@ -7282,26 +7296,26 @@ div.title_left{
                             		<span style="color: #197B30;">+<span id="gold_time_value" style="font-size:9px"></span></span>
                             	</div>
 							</div>
-							<div style='padding:2px 0 0 0;' title="$379,901">
-								<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;"  style="text-decoration: none; color: #4b3715;font-size:11px;"><strong id="gold_current_value" class="gold">$379,901</strong></a>							</div>
+							<div style='padding:2px 0 0 0;' title="$3,000">
+								<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;"  style="text-decoration: none; color: #4b3715;font-size:11px;"><strong id="gold_current_value" class="gold">$3,000</strong></a>							</div>
 						</div>
 						<div style='clear:both;'></div>
 
 					</div>
 
-					<div style="float:left;width:180px;overflow:hidden;" title="Your XP: 8058/8100&#013;You need 42 Experience Points to get to the next level.">
+					<div style="float:left;width:180px;overflow:hidden;" title="Your XP: 2597/2757&#013;You need 160 Experience Points to get to the next level.">
 						<div style='padding:11px 0 0 17px;text-align:center;height:15px;overflow:hidden;'>
 		                    <div style="overflow:hidden;width:154px;height:15px;background-color:black;">
-		                    	<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/header_persist_xpbar.jpg');text-align:left;float:left;height:15px;width:91%;">&nbsp;</div>
+		                    	<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/header_persist_xpbar.jpg');text-align:left;float:left;height:15px;width:38%;">&nbsp;</div>
 		                    </div>
 
 		                    <div style="position:relative;top:-15px;z-index:0;">
-	                			<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none;font-size:10px;"><div style='color:#ffffff'>Level: 35</div></a>                			</div>
+	                			<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none;font-size:10px;"><div style='color:#ffffff'>Level: 20</div></a>                			</div>
 		                </div>
 		                <div id="header_player_xp_totals" style='padding:2px 0 0 20px;display:none;filter:alpha(opacity=100);'>
-		                	XP: <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;"  style="text-decoration: none; color: #4b3715;font-size:11px;"><strong>8058/8100</strong></a>		                </div>
+		                	XP: <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;"  style="text-decoration: none; color: #4b3715;font-size:11px;"><strong>2597/2757</strong></a>		                </div>
 		                <div id="header_player_xp_needed" style='padding:2px 0 0 20px;filter:alpha(opacity=100);'>
-		                	XP needed: <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;"  style="text-decoration: none; color: #197B30;font-size:11px;"><strong>42</strong></a>		                </div>
+		                	XP needed: <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;"  style="text-decoration: none; color: #197B30;font-size:11px;"><strong>160</strong></a>		                </div>
 					</div>
 
 					<div style="clear:both;"></div>
@@ -7320,7 +7334,7 @@ div.title_left{
 						<div style="float:left;padding:0 0 0 10px;">
 							<div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container.jpg");'>
 								<div style='float:left;width:25px;'>
-									<img style="float:left;" width="20" height="20" src="https://castleagegame1-a.akamaihd.net/graphics/demi_symbol_5.gif" />
+									<img style="float:left;" width="20" height="20" src="https://castleagegame1-a.akamaihd.net/graphics/demi_symbol_1.gif" />
 								</div>
 								<div style="float:left;width:65px;">
 									<div style="padding:4px 0 0 0;">
@@ -7328,7 +7342,7 @@ div.title_left{
 									</div>
 								</div>
 								<div style="float:left;width:70px;">
-										<div style="padding:4px 0 0 10px;font-weight:bold;">17h 44m </div>								</div>
+										<div style="padding:4px 0 0 10px;font-weight:bold;">23h 14m </div>								</div>
 
 								<div style="clear:both;"></div>
 							</div>
@@ -7342,7 +7356,7 @@ div.title_left{
 									</div>
 								</div>
 								<div style="float:left;width:70px;">
-									<div style="padding:4px 0 0 0;font-weight:bold;">7hrs 10m</div>								</div>
+									<div style="padding:4px 0 0 0;font-weight:bold;">23hrs 14m</div>								</div>
 
 								<div style="clear:both;"></div>
 							</div>
@@ -7356,7 +7370,14 @@ div.title_left{
 									</div>
 								</div>
 								<div style="float:left;width:70px;">
-									<div style="padding:4px 0 0 10px;font-weight:bold;">10h 24m </div>								</div>
+																		<div style="padding:3px 0 0 0;">
+										<form onsubmit="ajaxFormSend('globalContainer', 'index.php?', this);return false;" method="post">
+					        				<input type="hidden" name="action" value="conquestResourceCollectHeader" />
+					        				<input class="imgButton" type="image" src="https://castleagegame1-a.akamaihd.net/graphics/header_persist_btn_collect.gif" />
+					        				<input type="hidden" name="ajax"  value="1" />
+					        			</form>
+					        		</div>
+					        										</div>
 
 								<div style="clear:both;"></div>
 							</div>
@@ -7370,7 +7391,14 @@ div.title_left{
 									</div>
 								</div>
 								<div style="float:left;width:70px;">
-									<div style="padding:4px 0 0 10px;font-weight:bold;">10h 24m </div>								</div>
+																		<div style="padding:3px 0 0 0;">
+										<form onsubmit="ajaxFormSend('globalContainer', 'index.php?', this);return false;" method="post">
+					        				<input type="hidden" name="action" value="conquestDemiCollectHeader" />
+					        				<input class="imgButton" type="image" src="https://castleagegame1-a.akamaihd.net/graphics/header_persist_btn_pray.gif" />
+					        				<input type="hidden" name="ajax"  value="1" />
+					        			</form>
+					        		</div>
+					        										</div>
 
 								<div style="clear:both;"></div>
 							</div>
@@ -7390,19 +7418,19 @@ div.title_left{
 				
 			</div>
 
-			<input type="hidden" id="gold_time_sec" value="-460899" />
-		    <input type="hidden" id="gold_current_value_amount" value="379901" />
+			<input type="hidden" id="gold_time_sec" value="-670962" />
+		    <input type="hidden" id="gold_current_value_amount" value="3000" />
 		    <input type="hidden" id="gold_current_recharge_time" value="3600" />
-		    <input type="hidden" id="gold_current_increment" value="739200" />
+		    <input type="hidden" id="gold_current_increment" value="0" />
 		    
-		    		        <input type="hidden" id="stamina_time_sec" value="147" />
-		        <input type="hidden" id="stamina_current_value_amount" value="61" />
-		        <input type="hidden" id="stamina_current_max" value="102" />
+		    		        <input type="hidden" id="stamina_time_sec" value="260" />
+		        <input type="hidden" id="stamina_current_value_amount" value="12" />
+		        <input type="hidden" id="stamina_current_max" value="47" />
 		        <input type="hidden" id="stamina_current_recharge_time" value="300" />
 		    		    
-		    		        <input type="hidden" id="energy_time_sec" value="147" />
-		        <input type="hidden" id="energy_current_value_amount" value="28" />
-		        <input type="hidden" id="energy_current_max" value="91" />
+		    		        <input type="hidden" id="energy_time_sec" value="143" />
+		        <input type="hidden" id="energy_current_value_amount" value="34" />
+		        <input type="hidden" id="energy_current_max" value="38" />
 		        <input type="hidden" id="energy_current_recharge_time" value="300" />
 		    		    
 		        	</div>
@@ -7435,13 +7463,13 @@ div.title_left{
 									 		  quick_ajax('index.php?headerFavorPlate=0');">
 									<div style='padding:3px 0 0 10px;color:white;text-align:center;font-weight:bold;font-size:11px;'>
 										<span style="font-size:9px;">Favor:</span><br/>
-										21									</div>
+										25									</div>
 								</div>
 								<div style="clear:both;"></div>
 							</div>
 
 							<div style='width:161px;height:4px;'></div>
-															<div id="persistHomeConquestPlateClosed" title="Conquest Tokens" style='display:none;cursor:pointer;width:76px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_conquest_closed_plate.gif");'>
+															<div id="persistHomeConquestPlateClosed" title="Conquest Tokens" style='display:block;cursor:pointer;width:76px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_conquest_closed_plate.gif");'>
 									<div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'guildv2_conquest_command.php'); return false;">
 									</div>
 									<div style="float:left;width:26px;height:100%;" 
@@ -7453,7 +7481,7 @@ div.title_left{
 									<div style="clear:both;"></div>
 								</div>
 
-								<div id="persistHomeConquestPlateOpen" title="Conquest Tokens" style='display:block;cursor:pointer;width:140px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_conquest_open_plate.gif");'>
+								<div id="persistHomeConquestPlateOpen" title="Conquest Tokens" style='display:none;cursor:pointer;width:140px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_conquest_open_plate.gif");'>
 									<div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'guildv2_conquest_command.php'); return false;">
 									</div>
 									<div style="float:left;width:90px;height:100%;overflow:hidden;" 
@@ -7463,7 +7491,7 @@ div.title_left{
 										 		 ">
 										<div style='padding:3px 0 0 10px;color:white;text-align:center;font-weight:bold;font-size:11px;'>
 											<span style="font-size:9px;">Tokens:</span><br/>
-											6										</div>
+											10										</div>
 									</div>
 									<div style="clear:both;"></div>
 								</div>
@@ -8033,7 +8061,24 @@ div.title_left{
 		<table class="layout" cellspacing="0" cellpadding="0"><tr><td>
 	<div id="results_container" class="results_container" style="display:none"> </div>
 	<div id="results_main_wrapper">
-        	</div>
+        		<div class="results" style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/bg_main_middle.jpg');background-color:#D0B682;width:728px;">
+			<div style="padding:0 0 0 675px;">
+				<a href="index.php?close_result=global_bottom" onclick="ajaxLinkSend('globalContainer', 'index.php?close_result=global_bottom'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/help_close_x.gif" /></a>			</div>	
+					<div class="result">
+				<span class="result_body"><div style="width:726px;text-align:center;padding: 10px 0 0 0;">
+						<div style="clear:both;"></div>
+						<div style="float:left;padding: 0 0 0 0px;">
+						<img style="padding:10px 40px 0 40px;" src="https://castleagegame1-a.akamaihd.net/graphics/guild_symbol_160_10.gif"/>
+						</div>	
+						<div style="float:left;padding: 30px 0 0 10px;">
+							You are now a member: <a href="guild.php" onclick="ajaxLinkSend('globalContainer', 'guild.php'); return false;" >Jew Squad</a>
+						</div>						
+						<div style="clear:both;"></div>
+					</div></span>
+			</div>
+				</div>
+		<br />
+		</div>
  		<div style='display:none;' id="web3_coming_soon">
 				<div style="padding:390px 0 0 125px;">
     		<div style="float:left;width:500px;height:390px;">
@@ -8069,21 +8114,21 @@ div.title_left{
                 <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/helpmenu_bottom.jpg');width:500px;height:30px;overflow:hidden;" ></div>
     		</div>
     	</div>
-		</div>    <div style="padding:5px 0 0 5px;">
-    	<div style="cursor:help;width:730px;height:146px;text-align:center;background-image:url(https://castleagegame1-a.akamaihd.net/graphics/beginner_promo_home.jpg);"
-    		onClick="PositionAndDisplayPopupAtTop('oracle_promotion', this, '72', '600','noclass'); return false">
-    		<div style="padding: 90px 0 0 470px;">
-    			<img src="https://castleagegame1-a.akamaihd.net/graphics/promo_btn_viewreward.gif"/>
-    		</div>
-    				<div style='display:none;' id="oracle_promotion">
+		</div>	    <div style="padding:5px 0 0 5px;">
+	    	<div style="cursor:help;width:730px;height:146px;text-align:center;background-image:url(https://castleagegame1-a.akamaihd.net/graphics/beginner_promo_home.jpg);"
+	    		onClick="PositionAndDisplayPopupAtTop('oracle_promotion', this, '72', '600','noclass'); return false">
+	    		<div style="padding: 90px 0 0 470px;">
+	    			<img src="https://castleagegame1-a.akamaihd.net/graphics/promo_btn_viewreward.gif"/>
+	    		</div>
+	    				<div style='display:none;' id="oracle_promotion">
 			
-    		<div style="display:block;width:615px;height:401px;background-image:url(https://castleagegame1-a.akamaihd.net/graphics/beginner_promo_popup.jpg);">
-    			<div style="padding: 335px 0 0 180px;">
-    				<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/promo_btn_claim.gif" /></a>	    		</div>
-    		</div>
-    		</div>    	</div>
-    </div>
-        
+	    		<div style="display:block;width:615px;height:401px;background-image:url(https://castleagegame1-a.akamaihd.net/graphics/beginner_promo_popup.jpg);">
+	    			<div style="padding: 335px 0 0 180px;">
+	    				<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/promo_btn_claim.gif" /></a>		    		</div>
+	    		</div>
+	    		</div>	    	</div>
+	    </div>
+	        
     	
 		
 		    
@@ -8097,7 +8142,7 @@ div.title_left{
     <td width="54%" valign="top">
     				<div style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/treasure_chest_back2.jpg');text-align:left;width:400px;height:390px;color:#000000;font-family: Times New Roman;">
 			    <div style="padding: 85px 2px 3px 165px;">
-				    <a href="treasure_chest.php?treasure_set=alpha" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=alpha'); return false;"  style="color:#000000"><div style="text-align: left; width: 210px; font-size: 12px; height: 75px;">Each Treasure Chest Contains a random item, soldier or hero. Some heroes are extremely rare and you can only find them here. Learn More!</div></a>				</div>
+				    <a href="treasure_chest.php" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php'); return false;"  style="color:#000000"><div style="text-align: left; width: 210px; font-size: 12px; height: 75px;">Each Treasure Chest Contains a random item, soldier or hero. Some heroes are extremely rare and you can only find them here. Learn More!</div></a>				</div>
 
 				<a href="treasure_chest.php?treasure_set=alpha" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=alpha'); return false;" ><div style='width:100px;height:22px;'>&nbsp</div></a>				<div>
 					<div style="clear:both;"></div>
@@ -8105,43 +8150,15 @@ div.title_left{
 						<a href="treasure_chest.php?treasure_set=alpha" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=alpha'); return false;" ><div style='width:100px;height:70px;'>&nbsp</div></a>						<a href="treasure_chest.php" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php'); return false;" ><div style='width:100px;height:100px;'>&nbsp</div></a>					</div>
 					<div style="padding: 6px 0px 0px 0px;">
     					<div style="float:left; height: 200px; text-align: left; width: 280px;">
-    					    							<div style="padding-top:5px;">
-    								<div style="clear:both;"></div>
-    								<div style="float:left;width:20px;font-weight:bold;">1x</div>
-    								<div style="padding-left:10px;">
-    								    <div style="float:left;width:130px;font-weight:bold;">for 30 Favor Points!</div>
-    								</div>
-    								<div style="float:left;"><a href="treasure_chest.php?treasure_set=alpha&buychoice=12" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=alpha&buychoice=12'); return false;" ><div class='imgButton'><img src='https://castleagegame1-a.akamaihd.net/graphics/oracle_accept_blue.gif' /></div></a></div>
-    								<div style="clear:both;"></div>
-    							</div>
-    							    							<div style="padding-top:5px;">
-    								<div style="clear:both;"></div>
-    								<div style="float:left;width:20px;font-weight:bold;">3x</div>
-    								<div style="padding-left:10px;">
-    								    <div style="float:left;width:130px;font-weight:bold;">for 80 Favor Points!</div>
-    								</div>
-    								<div style="float:left;"><a href="treasure_chest.php?treasure_set=alpha&buychoice=13" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=alpha&buychoice=13'); return false;" ><div class='imgButton'><img src='https://castleagegame1-a.akamaihd.net/graphics/oracle_accept_blue.gif' /></div></a></div>
-    								<div style="clear:both;"></div>
-    							</div>
-    							    						<a href="treasure_chest.php" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php'); return false;" ><div style='width:100px;height:42px;'>&nbsp</div></a>    						    							<div style="padding-top:5px;">
-    								<div style="clear:both;"></div>
-    								<div style="float:left;width:20px;font-weight:bold;">1x</div>
-    								<div style="padding-left:10px;">
-    								    <div style="float:left;width:130px;font-weight:bold;">for 20 Favor Points!</div>
-    								</div>
-    								<div style="float:left;"><a href="treasure_chest.php?buychoice=10" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?buychoice=10'); return false;" ><div class='imgButton'><img src='https://castleagegame1-a.akamaihd.net/graphics/treasurechest_7_purchasebtn.gif' /></div></a></div>
-    								<div style="clear:both;"></div>
-    							</div>
-    							    							<div style="padding-top:5px;">
-    								<div style="clear:both;"></div>
-    								<div style="float:left;width:20px;font-weight:bold;">3x</div>
-    								<div style="padding-left:10px;">
-    								    <div style="float:left;width:130px;font-weight:bold;">for 55 Favor Points!</div>
-    								</div>
-    								<div style="float:left;"><a href="treasure_chest.php?buychoice=11" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?buychoice=11'); return false;" ><div class='imgButton'><img src='https://castleagegame1-a.akamaihd.net/graphics/treasurechest_7_purchasebtn.gif' /></div></a></div>
-    								<div style="clear:both;"></div>
-    							</div>
-    							    					</div>
+    							    <div style="padding:5px 0 0 0;">
+		    1x for 30 Favor Points!		    <a href="treasure_chest.php?treasure_set=alpha&buychoice=12" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=alpha&buychoice=12'); return false;" ><img class='imgButton' src='https://castleagegame1-a.akamaihd.net/graphics/treasurechest_7_purchasebtn.gif' style='vertical-align:top;' /></a>		    </div>
+				    <div style="padding:5px 0 0 0;">
+		    3x for 80 Favor Points!		    <a href="treasure_chest.php?treasure_set=alpha&buychoice=13" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=alpha&buychoice=13'); return false;" ><img class='imgButton' src='https://castleagegame1-a.akamaihd.net/graphics/treasurechest_7_purchasebtn.gif' style='vertical-align:top;' /></a>		    </div>
+		    						<a href="treasure_chest.php" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php'); return false;" ><div style='width:100px;height:42px;'>&nbsp</div></a>    								    <div style="padding:5px 0 0 0;">
+		    1x for 20 Favor Points!		    <a href="treasure_chest.php?treasure_set=standard&buychoice=10" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=standard&buychoice=10'); return false;" ><img class='imgButton' src='https://castleagegame1-a.akamaihd.net/graphics/treasurechest_7_purchasebtn.gif' style='vertical-align:top;' /></a>		    </div>
+				    <div style="padding:5px 0 0 0;">
+		    3x for 55 Favor Points!		    <a href="treasure_chest.php?treasure_set=standard&buychoice=11" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php?treasure_set=standard&buychoice=11'); return false;" ><img class='imgButton' src='https://castleagegame1-a.akamaihd.net/graphics/treasurechest_7_purchasebtn.gif' style='vertical-align:top;' /></a>		    </div>
+		    					</div>
     				</div>
 					<div style="clear:both;"></div>
 				</div>
@@ -8161,32 +8178,32 @@ div.title_left{
                   <div style="width:100%;padding-left:10px;">
                   	<div style="height:17px;"></div>
                     <div class="special_edition_title">
-                      Kaiser                    </div>
-                    <div class="attdeftext">17 Attack</div>
-                    <div class="attdeftext">16 Defense</div>
+                      Lailah                    </div>
+                    <div class="attdeftext">15 Attack</div>
+                    <div class="attdeftext">17 Defense</div>
                     <div class="se_req_text" style="color:#000000;"> Favor Cost: 30 points</div>
-                    <div class="se_req_text" style="color:#7a0f08;"> You have : 21 points</div>
+                    <div class="se_req_text" style="color:#7a0f08;"> You have : 25 points</div>
                   </div>
                 </td>
                 <td width="50%" valign="top">
                   <div style="padding-left:10px;padding-top:9px; text-align:left;">
-                    <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/hero_kaiser.jpg" title="Kaiser" width="160" height="160"/></a>                  </div>
+                    <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/hero_lailah.jpg" title="Lailah" width="160" height="160"/></a>                  </div>
                 </td>
               </tr>
             </table>
           </div>
           <div style="width:370px;padding-left:24px;text-align:center;font-family:Times New Roman;color:#197B30;height:24px;">
-          	 Abilities: Increase Critical Chance          </div>
+          	 Abilities: Increase Player Defense and Max Energy          </div>
           <div style="width:370px;padding-left:24px;text-align:center;">
             <div class="se_desc" style="padding-left:10px;">
-              Kaiser is one of the heads of a powerful guild of assassins. Cold-hearted and distant, Kaiser puts the completion of his missions above all else.            </div>
+              One of the great Seraphims, Lailah was sent to watch over the humans of Valeria, to ensure that the balance is maintained. However, since Mephistopheles entered into this realm, she has taken up arms against the demonic denizens of the land.            </div>
           </div>
           <div>
             <table width="400" valign="center">
               <tr>
 				<td width="100%" align="middle">
 					<div style="text-align:center;width:400px;">
-						<a href="oracle.php?buychoice=52" onclick="ajaxLinkSend('globalContainer', 'oracle.php?buychoice=52'); return false;" ><img src='https://castleagegame1-a.akamaihd.net/graphics/purchase_button.gif' /></a>					</div>
+						<a href="oracle.php?buychoice=30" onclick="ajaxLinkSend('globalContainer', 'oracle.php?buychoice=30'); return false;" ><img src='https://castleagegame1-a.akamaihd.net/graphics/purchase_button.gif' /></a>					</div>
 				</td>
               </tr>
             </table>
@@ -8207,32 +8224,32 @@ div.title_left{
                   <div style="width:100%;padding-left:10px;">
                   	<div style="height:17px;"></div>
                     <div class="special_edition_title">
-                      Death Dealer                    </div>
-                    <div class="attdeftext">18 Attack</div>
-                    <div class="attdeftext">10 Defense</div>
+                      Incarnation                    </div>
+                    <div class="attdeftext">11 Attack</div>
+                    <div class="attdeftext">11 Defense</div>
                     <div class="se_req_text" style="color:#000000;"> Favor Cost: 25 points</div>
-                    <div class="se_req_text" style="color:#7a0f08;"> You have : 21 points</div>
+                    <div class="se_req_text" style="color:#7a0f08;"> You have : 25 points</div>
                   </div>
                 </td>
                 <td width="50%" valign="top">
                   <div style="padding-left:10px;padding-top:9px; text-align:left;">
-                    <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/eq_kaiser_weapon_1.jpg" title="Death Dealer" width="160" height="160"/></a>                  </div>
+                    <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/eq_lailah_sword.jpg" title="Incarnation" width="160" height="160"/></a>                  </div>
                 </td>
               </tr>
             </table>
           </div>
           <div style="width:370px;padding-left:24px;text-align:center;font-family:Times New Roman;color:#197B30;height:24px;">
-          	 +2 Attack to Kaiser (not stackable)          </div>
+          	 +1 attack to Lailah (not stackable)          </div>
           <div style="width:370px;padding-left:24px;text-align:center;">
             <div class="se_desc" style="padding-left:10px;">
-              The Death Dealer that Kaiser wields is an unorthodox and rare weapon. Though awkward in the hands of a novice, the Death Dealer is efficient and deadly in the hands of Kaiser.            </div>
+              Said to be created from pure holy essence, Incarnation can only be wielded by those with the purest moral fortitude. Those who do not meet Incarnation's standard will receive a burn that no magic can heal.            </div>
           </div>
           <div>
             <table width="400" valign="center">
               <tr>
 				<td width="100%" align="middle">
 					<div style="text-align:center;width:400px;">
-						<a href="oracle.php?buychoice=53" onclick="ajaxLinkSend('globalContainer', 'oracle.php?buychoice=53'); return false;" ><img src='https://castleagegame1-a.akamaihd.net/graphics/purchase_button.gif' /></a>					</div>
+						<a href="oracle.php?buychoice=31" onclick="ajaxLinkSend('globalContainer', 'oracle.php?buychoice=31'); return false;" ><img src='https://castleagegame1-a.akamaihd.net/graphics/purchase_button.gif' /></a>					</div>
 				</td>
               </tr>
             </table>
@@ -8253,32 +8270,32 @@ div.title_left{
                   <div style="width:100%;padding-left:10px;">
                   	<div style="height:17px;"></div>
                     <div class="special_edition_title">
-                      Ornate Dagger                    </div>
-                    <div class="attdeftext">16 Attack</div>
-                    <div class="attdeftext">12 Defense</div>
+                      Platinus Armor                    </div>
+                    <div class="attdeftext">9 Attack</div>
+                    <div class="attdeftext">11 Defense</div>
                     <div class="se_req_text" style="color:#000000;"> Favor Cost: 25 points</div>
-                    <div class="se_req_text" style="color:#7a0f08;"> You have : 21 points</div>
+                    <div class="se_req_text" style="color:#7a0f08;"> You have : 25 points</div>
                   </div>
                 </td>
                 <td width="50%" valign="top">
                   <div style="padding-left:10px;padding-top:9px; text-align:left;">
-                    <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/eq_kaiser_weapon_2.jpg" title="Ornate Dagger" width="160" height="160"/></a>                  </div>
+                    <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/eq_lailah_armor.jpg" title="Platinus Armor" width="160" height="160"/></a>                  </div>
                 </td>
               </tr>
             </table>
           </div>
           <div style="width:370px;padding-left:24px;text-align:center;font-family:Times New Roman;color:#197B30;height:24px;">
-          	 +2 Attack to Kaiser (not stackable)          </div>
+          	 +1 defense to Lailah (not stackable)          </div>
           <div style="width:370px;padding-left:24px;text-align:center;">
             <div class="se_desc" style="padding-left:10px;">
-              Kaisers weapon of choice when dispatching his targets is his Ornate Dagger. Although plain in comparison to most assassin weapons, Kaiser has never failed to slay his targets with this weapon.            </div>
+              Platinus Armor is the decorated armor that only Seraphims are able to wear. In addition to being a display of rank, Platinus Armor is able to deflect blows with ease from mere mortals.            </div>
           </div>
           <div>
             <table width="400" valign="center">
               <tr>
 				<td width="100%" align="middle">
 					<div style="text-align:center;width:400px;">
-						<a href="oracle.php?buychoice=54" onclick="ajaxLinkSend('globalContainer', 'oracle.php?buychoice=54'); return false;" ><img src='https://castleagegame1-a.akamaihd.net/graphics/purchase_button.gif' /></a>					</div>
+						<a href="oracle.php?buychoice=32" onclick="ajaxLinkSend('globalContainer', 'oracle.php?buychoice=32'); return false;" ><img src='https://castleagegame1-a.akamaihd.net/graphics/purchase_button.gif' /></a>					</div>
 				</td>
               </tr>
             </table>
@@ -8299,32 +8316,32 @@ div.title_left{
                   <div style="width:100%;padding-left:10px;">
                   	<div style="height:17px;"></div>
                     <div class="special_edition_title">
-                      Backdraft                    </div>
-                    <div class="attdeftext">12 Attack</div>
-                    <div class="attdeftext">7 Defense</div>
+                      Harmony                    </div>
+                    <div class="attdeftext">8 Attack</div>
+                    <div class="attdeftext">11 Defense</div>
                     <div class="se_req_text" style="color:#000000;"> Favor Cost: 25 points</div>
-                    <div class="se_req_text" style="color:#7a0f08;"> You have : 21 points</div>
+                    <div class="se_req_text" style="color:#7a0f08;"> You have : 25 points</div>
                   </div>
                 </td>
                 <td width="50%" valign="top">
                   <div style="padding-left:10px;padding-top:9px; text-align:left;">
-                    <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/eq_kaiser_magic.jpg" title="Backdraft" width="160" height="160"/></a>                  </div>
+                    <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/eq_lailah_shield.jpg" title="Harmony" width="160" height="160"/></a>                  </div>
                 </td>
               </tr>
             </table>
           </div>
           <div style="width:370px;padding-left:24px;text-align:center;font-family:Times New Roman;color:#197B30;height:24px;">
-          	 +1% Critical when Kaiser is equipped (not stackable)          </div>
+          	 Reduce Damage Taken by 1 when Lailah is equipped          </div>
           <div style="width:370px;padding-left:24px;text-align:center;">
             <div class="se_desc" style="padding-left:10px;">
-              Though Kaiser does not often require magic to slay his targets, when the situation calls for it, he is able to heat the atmosphere to immense temperatures and unleash it in an enormous Backdraft.            </div>
+              Lailah's shield Harmony was bestowed upon her when she ascended to the rank of Seraphim amongst the angels. Harmony's wielder is able to detect an attack moments before it actually comes.            </div>
           </div>
           <div>
             <table width="400" valign="center">
               <tr>
 				<td width="100%" align="middle">
 					<div style="text-align:center;width:400px;">
-						<a href="oracle.php?buychoice=55" onclick="ajaxLinkSend('globalContainer', 'oracle.php?buychoice=55'); return false;" ><img src='https://castleagegame1-a.akamaihd.net/graphics/purchase_button.gif' /></a>					</div>
+						<a href="oracle.php?buychoice=33" onclick="ajaxLinkSend('globalContainer', 'oracle.php?buychoice=33'); return false;" ><img src='https://castleagegame1-a.akamaihd.net/graphics/purchase_button.gif' /></a>					</div>
 				</td>
               </tr>
             </table>
@@ -8406,14 +8423,14 @@ div.title_left{
 		</div>
     
 		<div style="padding:5px 0 0 5px;">
-		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/fridayad.jpg');-webkit-background-size:338px 166px;width:338px;height:166px;">
+		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/wedsad.jpg');-webkit-background-size:338px 166px;width:338px;height:166px;">
 			<div style="float:left;width:95px;height:100%;">
 				<div style="width:48px;height:48px;margin:80px 0px 0px 26px;-webkit-border-radius:22px;overflow:hidden;">
 									</div>
 			</div>
 			<div style="float:left;width:243px;height:100%;">
 				<div style="margin:50px 0px 0px 2px;width:235px;height:92px;">
-					<div style="width:215px;height:75px;padding:10px 0px 0px 8px;"><b>Saturday Bonus</b><br />Double skill points per Demi Pray</div>
+					<div style="width:215px;height:75px;padding:10px 0px 0px 8px;"><b>Wednesday Bonus</b><br />Double Lumber dropped on Daily Conquest Collect</div>
 				</div>
 				<div style="width:109px;height:19px;margin-left:63px;">
 					<a href="daily_bonus_list.php" onclick="ajaxLinkSend('globalContainer', 'daily_bonus_list.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/daily_btn_view.gif"/></a>				</div>
@@ -8507,7 +8524,7 @@ div.title_left{
 			        <div style="padding:2px 0 0 5px;">
 			            Conquest Earth status:<br/>
 			            <span style='color:#07d9c1'>
-							PROTECTED: 17h 2m 						</span>
+							VULNERABLE						</span>
 					</div>
 			    </div>
 
@@ -8530,7 +8547,8 @@ div.title_left{
                 <div style="padding:2px 0 0 5px;">
                     Festival Battle status:<br/>
                     <span style='color:black'>
-                                					19 HOURS        				    				</span>
+                                					BATTLE NOW!
+        				    				</span>
 				</div>
 		    </div>
 		
@@ -8541,149 +8559,7 @@ div.title_left{
             </div>
         </div>
     
-        		<div style="width:297px;height:15px;"></div>
-    		<div style="height:29px;width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_top.gif');background-repeat:no-repeat;font-weight:bold;">
-    		    <div style="width:35px;height:25px;float:left;">
-    		        <div style="padding-left:5px;">
-                        <img src='https://castleagegame1-a.akamaihd.net/graphics/achivement_tabicons_rankbattle.gif' height="25" width="25" />
-                    </div>
-                </div>
-        
-                <div style="width:170px;height:25px;float:left;">
-                    <div style="padding:5px 0 0 0;">
-                        <span style="color:#A30000">Defeat!</span> 23h 48m ago:
-                    </div>
-                </div>
-                <div style="width:80px;height:25px;float:left;">
-                    <div style="padding:4px 0 0 8px;">
-                                                    <form onsubmit="ajaxFormSend('globalContainer', 'battle.php', this);return false;" method="post" id="1bc193a10ed828e2d3adb759e3299034" >
-        					<input type="hidden" name="target_id" value="100005682463620"  />
-        					<input type="hidden" name="action" value="battle" />
-        					<input type="hidden" name="duel" value="true"  />
-        					<input type="hidden" name="bqh" value="33a654c3db1f424df2ed4129f2ee6d74" />
-        					<div class="imgButton">
-        						<input alt="Duel" type="image" src="https://castleagegame1-a.akamaihd.net/graphics/news_btn_revenge.gif" name="battle_frm_sbm" />
-        					</div>
-        					<input type="hidden" name="ajax"  value="1" />
-        					</form>
-                                            </div>
-                </div>
-    		</div>
-    		    		        <div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    		            <div style="padding:2px 0 3px 15px;">
-    				        <div style="width:275px;">
-                                Duel! You engaged in multiple battles against <a href="keep.php?casuser=100005682463620" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=100005682463620'); return false;" >Jeep</a>!<br/>
-                                <strong>You won 0 times and lost 3 times. </strong>
-                                <span id="expandButton_100005682463620_1_1" onclick="styleDisplay('battle_messages_100005682463620_1_1','block');styleDisplay('expandButton_100005682463620_1_1','none');styleDisplay('collapseButton_100005682463620_1_1','block');"><a href="#">[+]</a></span>
-                                <span id="collapseButton_100005682463620_1_1" style="display:none"  onclick="styleDisplay('battle_messages_100005682463620_1_1','none');styleDisplay('expandButton_100005682463620_1_1','block');styleDisplay('collapseButton_100005682463620_1_1','none');"><a href="#">[-]</a></span>
-                            </div>
-    				    </div>
-    				</div>
-    		    		<div id="battle_messages_100005682463620_1_1" style="display:none">
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=100005682463620" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=100005682463620'); return false;" >Jeep</a><br />You lost the battle, taking <strong>9 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=100005682463620" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=100005682463620'); return false;" >Jeep</a><br />You lost the battle, taking <strong>11 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=100005682463620" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=100005682463620'); return false;" >Jeep</a><br />You lost the battle, taking <strong>10 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    		</div>
-    			<div style="height:7px;width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_bot.gif');background-repeat:no-repeat;">&nbsp;</div>
-    		<div style="width:297px;height:15px;"></div>
-    		<div style="height:29px;width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_top.gif');background-repeat:no-repeat;font-weight:bold;">
-    		    <div style="width:35px;height:25px;float:left;">
-    		        <div style="padding-left:5px;">
-                        <img src='https://castleagegame1-a.akamaihd.net/graphics/achivement_tabicons_rankbattle.gif' height="25" width="25" />
-                    </div>
-                </div>
-        
-                <div style="width:170px;height:25px;float:left;">
-                    <div style="padding:5px 0 0 0;">
-                        <span style="color:#A30000">Defeat!</span> 2d 5h ago:
-                    </div>
-                </div>
-                <div style="width:80px;height:25px;float:left;">
-                    <div style="padding:4px 0 0 8px;">
-                                                    <form onsubmit="ajaxFormSend('globalContainer', 'battle.php', this);return false;" method="post" id="a1a590660f02d26778873ccec33a43bd" >
-        					<input type="hidden" name="target_id" value="1128060104"  />
-        					<input type="hidden" name="action" value="battle" />
-        					<input type="hidden" name="duel" value="true"  />
-        					<input type="hidden" name="bqh" value="33a654c3db1f424df2ed4129f2ee6d74" />
-        					<div class="imgButton">
-        						<input alt="Duel" type="image" src="https://castleagegame1-a.akamaihd.net/graphics/news_btn_revenge.gif" name="battle_frm_sbm" />
-        					</div>
-        					<input type="hidden" name="ajax"  value="1" />
-        					</form>
-                                            </div>
-                </div>
-    		</div>
-    		    		        <div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    		            <div style="padding:2px 0 3px 15px;">
-    				        <div style="width:275px;">
-                                Duel! You engaged in multiple battles against <a href="keep.php?casuser=1128060104" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=1128060104'); return false;" >Gunnar</a>!<br/>
-                                <strong>You won 0 times and lost 7 times. </strong>
-                                <span id="expandButton_1128060104_1_1" onclick="styleDisplay('battle_messages_1128060104_1_1','block');styleDisplay('expandButton_1128060104_1_1','none');styleDisplay('collapseButton_1128060104_1_1','block');"><a href="#">[+]</a></span>
-                                <span id="collapseButton_1128060104_1_1" style="display:none"  onclick="styleDisplay('battle_messages_1128060104_1_1','none');styleDisplay('expandButton_1128060104_1_1','block');styleDisplay('collapseButton_1128060104_1_1','none');"><a href="#">[-]</a></span>
-                            </div>
-    				    </div>
-    				</div>
-    		    		<div id="battle_messages_1128060104_1_1" style="display:none">
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=1128060104" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=1128060104'); return false;" >Gunnar</a><br />You lost the battle, taking <strong>8 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=1128060104" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=1128060104'); return false;" >Gunnar</a><br />You lost the battle, taking <strong>10 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=1128060104" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=1128060104'); return false;" >Gunnar</a><br />You lost the battle, taking <strong>10 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=1128060104" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=1128060104'); return false;" >Gunnar</a><br />You lost the battle, taking <strong>7 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=1128060104" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=1128060104'); return false;" >Gunnar</a><br />You lost the battle, taking <strong>9 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=1128060104" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=1128060104'); return false;" >Gunnar</a><br />You lost the battle, taking <strong>10 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    			<div style="width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_mid.gif');background-repeat:y-repeat;">
-    			    <div style="padding:2px 0 3px 15px;">
-    			        <div style="width:275px;">    						        
-    			            You were challenged by <a href="https://apps.facebook.com/castle_age/keep.php?casuser=1128060104" onclick="ajaxLinkSend('globalContainer', 'keep.php?casuser=1128060104'); return false;" >Gunnar</a><br />You lost the battle, taking <strong>8 damage</strong> and losing <span class="negative"><b class="gold">$100,000</b></span>. You have lost 4<a href="https://apps.facebook.com/castle_age/battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" > Battle Points</a>!    			        </div>
-    			    </div>
-    			</div>
-    		    		</div>
-    			<div style="height:7px;width:297px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/news_innercontainer_bot.gif');background-repeat:no-repeat;">&nbsp;</div>
-</div>                </div>
+    </div>                </div>
                 
             </div>
         </div>
@@ -8774,17 +8650,17 @@ div.title_left{
 <div id="hot_swap_class_outer" class="noClick" style="width:59px;height:380px;position:relative;left:400px;top:-253px;overflow:hidden;">
 	<div id="hot_swap_class_div" style="width:59px;height:190px;position:relative;z-index:1001;top:98px;left:4px;display:none;">
 		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_classdropdown.gif');background-size:59px 190px;background-repeat:no-repeat;width:59px;height:190px;padding:70px 0px 0px 0px;text-align:center;">
-							<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('warrior');">
-					<img src="https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif" style="width:20px;margin:3px 0px 0px 0px;" />
-					<div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">WARRIOR</div>
-				</div>
-								<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('rogue');">
+							<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('rogue');">
 					<img src="https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif" style="width:20px;margin:3px 0px 0px 0px;" />
 					<div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">ROGUE</div>
 				</div>
 								<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('mage');">
 					<img src="https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif" style="width:20px;margin:3px 0px 0px 0px;" />
 					<div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">MAGE</div>
+				</div>
+								<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('cleric');">
+					<img src="https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif" style="width:20px;margin:3px 0px 0px 0px;" />
+					<div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">CLERIC</div>
 				</div>
 						</div>
 	</div>
@@ -8809,7 +8685,7 @@ div.title_left{
 			<img id='recent_general_swap_close' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topright.jpg" style='display:none;' onclick="closeRecentGenerals();"/>
 		</div>
 		<div style="float:left;padding-top:5px;width:123px;white-space:nowrap;overflow:hidden;font-size:9pt;line-height:1.5;">
-		Sano		</div>
+		Penelope		</div>
 		<div style='float:right;width:20px;padding:3px 0 0 0px;cursor:pointer;margin-right:7px;' class="imgButton">
 			<img id='hot_swap_loadouts_open' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topright.jpg" style="display:none;" onclick="openHotSwapLoadouts();"/>
 			<img id='hot_swap_loadouts_close' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topleft.jpg" onclick="closeHotSwapLoadouts();"/>
@@ -8817,10 +8693,10 @@ div.title_left{
 	</div>
 	<div style="float:left;width:116px;">
 		<div style='padding-left:4px;'>
-			<a href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" ><div class="imgButton"><img title="click to select general" width="110" height="110" src="https://castleagegame1-a.akamaihd.net/graphics/hero_sano.jpg" /></div></a>		</div>
+			<a href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" ><div class="imgButton"><img title="click to select general" width="110" height="110" src="https://castleagegame1-a.akamaihd.net/graphics/hero_penelope.jpg" /></div></a>		</div>
 		<div style='font-size:14px;'>
 							<div style='float:left; color:#fec182; padding: 5px 0 0 32px; width:25px; text-align:center;font-weight:normal;'> 
-					6				</div>
+					3				</div>
 				<div style='float:left; color:#b8e1fd; padding: 5px 0 0 30px; width:25px; text-align:center;font-weight:normal;'> 
 					6				</div>
 				<div style='clear:both;'></div>
@@ -8829,30 +8705,21 @@ div.title_left{
 	<div style="float:left; width:60px;">
 		<div onclick="ajaxLinkSend('globalContainer','item_equip.php');return false;" style='padding: 0 0 0 5px;cursor:pointer;'>
 								<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
-						<img title="Gladiator Sword" alt="Gladiator Sword" src="https://castleagegame1-a.akamaihd.net/graphics/battle_rank_reward_sword.jpg" style="width:24px;height:24px;"/>
+						<img title="Atlantean Sword" alt="Atlantean Sword" src="https://castleagegame1-a.akamaihd.net/graphics/eq_seamonster_sword.jpg" style="width:24px;height:24px;"/>
 					</div>
 									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
-						<img title="Tempest Shield" alt="Tempest Shield" src="https://castleagegame1-a.akamaihd.net/graphics/demi_energy_shield.jpg" style="width:24px;height:24px;"/>
+						<img title="Serpentine Shield" alt="Serpentine Shield" src="https://castleagegame1-a.akamaihd.net/graphics/alchemy_serpent_done.jpg" style="width:24px;height:24px;"/>
 					</div>
 									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
-						<img title="Platinum Plate" alt="Platinum Plate" src="https://castleagegame1-a.akamaihd.net/graphics/eq_platinum_plate.jpg" style="width:24px;height:24px;"/>
+						<img title="Faerie Wings" alt="Faerie Wings" src="https://castleagegame1-a.akamaihd.net/graphics/eq_sylvanus_wings.jpg" style="width:24px;height:24px;"/>
 					</div>
 									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
-						<img title="Moonfall Crown" alt="Moonfall Crown" src="https://castleagegame1-a.akamaihd.net/graphics/demi_health_helm.jpg" style="width:24px;height:24px;"/>
-					</div>
-									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
-						<img title="Amulet of Cefka" alt="Amulet of Cefka" src="https://castleagegame1-a.akamaihd.net/graphics/item_cefka.jpg" style="width:24px;height:24px;"/>
-					</div>
-									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
-						<img title="Lightning Storm" alt="Lightning Storm" src="https://castleagegame1-a.akamaihd.net/graphics/lightning_storm.jpg" style="width:24px;height:24px;"/>
-					</div>
-									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
-						<img title="Gildamesh's Gauntlet" alt="Gildamesh's Gauntlet" src="https://castleagegame1-a.akamaihd.net/graphics/boss_orc_glove.jpg" style="width:24px;height:24px;"/>
+						<img title="Poseidons Horn" alt="Poseidons Horn" src="https://castleagegame1-a.akamaihd.net/graphics/alchemy_weapon_horn_done.jpg" style="width:24px;height:24px;"/>
 					</div>
 									</div>
 	</div>
 	<div style="float:left;width:60px;height:28px;margin-top:2px;">
-		<img src="https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif" style="float:left;width:24px;margin:2px 4px 0px 4px;" />
+		<img src="https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif" style="float:left;width:24px;margin:2px 4px 0px 4px;" />
 		<img id="hot_swap_class_open" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_down.jpg" style="margin:4px 0px 0px 0px;cursor:pointer;" onclick="openHotSwapClass();" />
 		<img id="hot_swap_class_close" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_up.jpg" style="display:none;margin:4px 0px 0px 0px;cursor:pointer;" onclick="closeHotSwapClass();" />
 	</div>

@@ -19,7 +19,7 @@ polyList = ['matthewgcasey@gmail.com', 'Aphillistienio@gmail.com', 'Bphillistien
 
 newList = ["1jew@grr.la","2jew@grr.la","3jew@grr.la","4jew@grr.la","5jew@grr.la","6jew@grr.la","7jew@grr.la","8jew@grr.la","9jew@grr.la","10jew@grr.la","11jew@grr.la","12jew@grr.la","13jew@grr.la","14jew@grr.la","15jew@grr.la","16jew@grr.la","17jew@grr.la"]
 
-pw = "Stew"
+pw = "WITHHELD FROM BEGIN!!"
 cA = 'http://web3.castleagegame.com/castle_ws/'
 guildId = '&guild_id=100003851490194_1340565613'
 
